@@ -1,7 +1,8 @@
 const TodoHeader = () => {
   return (
-    <div>
-      <input type="text" placeholder="Enter task here..."></input>
+    <div className="header">
+      <p>Enter task here...</p>
+      <hr></hr>
     </div>
   );
 };

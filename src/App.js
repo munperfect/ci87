@@ -1,5 +1,5 @@
 import TodoPage from "./pages/Todo";
-import "./index.css";
+import "./App.css";
 
 const App = () => {
   return (

@@ -1,3 +1,31 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+hr {
+  width: 150%;
+  margin-bottom: 3rem;
+}
+
+.header {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.list {
+  text-align: left;
+  margin-bottom: 6rem;
+}
+
+.footer {
+  width: 150%;
+  display: flex;
+  justify-content: space-between;
 }
