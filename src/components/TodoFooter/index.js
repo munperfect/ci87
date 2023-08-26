@@ -1,7 +1,11 @@
+import todos from "../../data/todo";
+
 const TodoFooter = () => {
+  const notCompletedTodos = todos.filter((todo) => !todo.isCompleted);
+
   return (
     <div className="footer">
-      <p>5 tasks left</p>
+      <p>{notCompletedTodos.length} tasks left</p>
       <p>MindX todolist</p>
     </div>
   );
