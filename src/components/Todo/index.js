@@ -1,8 +1,10 @@
-const Todo = (props) => {
+const Todo = ({ id, text, isCompleted }) => {
   return (
     <div>
-      <input type="radio" value={props.id}></input>
-      <label>{props.text}</label>
+      <input type="checkbox" checked={isCompleted} />
+      <span style={{ textDecoration: isCompleted ? "line-through" : "none" }}>
+        {text}
+      </span>
     </div>
   );
 };
