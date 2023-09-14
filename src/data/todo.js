@@ -1,9 +1,9 @@
-const todos = [
-  { id: 1, todo: "Clean up bedroom", isCompleted: false },
-  { id: 2, todo: "Buy some milk", isCompleted: false },
-  { id: 3, todo: "Jogging", isCompleted: false },
-  { id: 4, todo: "Learn React", isCompleted: false },
-  { id: 5, todo: "Do excercises", isCompleted: false },
+const TODOS = [
+  { id: 1, text: "Clean up bedroom", isCompleted: false },
+  { id: 2, text: "Buy some milk", isCompleted: false },
+  { id: 3, text: "Jogging", isCompleted: false },
+  { id: 4, text: "Learn React", isCompleted: false },
+  { id: 5, text: "Do excercises", isCompleted: false },
 ];
 
-export default todos;
+export default TODOS;

@@ -1,6 +1,4 @@
-import todos from "../../data/todo";
-
-const TodoFooter = () => {
+const TodoFooter = ({ todos }) => {
   const notCompletedTodos = todos.filter((todo) => !todo.isCompleted);
 
   return (

@@ -1,11 +1,15 @@
 import Todo from "../Todo";
-import todos from "../../data/todo";
 
-const TodoList = () => {
+const TodoList = ({ todos, handleCompleteTodo, handleEditTodo }) => {
   return (
     <div className="list">
-      {todos.map((todo) => (
-        <Todo id={todo.id} text={todo.todo} isCompleted={todo.isCompleted} />
+      {todos.map((item) => (
+        <Todo
+          item={item}
+          key={item.id}
+          handleCompleteTodo={handleCompleteTodo}
+          handleEditTodo={handleEditTodo}
+        />
       ))}
     </div>
   );
