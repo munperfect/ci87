@@ -14,10 +14,15 @@ hr {
   margin-bottom: 3rem;
 }
 
-.header {
-  text-align: left;
+.header input {
+  border: none;
   font-size: 2rem;
-  font-weight: 350;
+  color: rgb(168, 168, 168);
+  margin-top: 5rem;
+}
+
+.header input::placeholder {
+  color: rgb(168, 168, 168);
 }
 
 .list {
