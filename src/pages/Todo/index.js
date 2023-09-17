@@ -25,6 +25,10 @@ const TodoPage = () => {
     );
   }
 
+  function handleDeleteTodo(id) {
+    setTodos((todos) => todos.filter((item) => item.id !== id));
+  }
+
   return (
     <div>
       <TodoHeader handleAddTodo={handleAddTodo} />
@@ -32,6 +36,7 @@ const TodoPage = () => {
         todos={todos}
         handleCompleteTodo={handleCompleteTodo}
         handleEditTodo={handleEditTodo}
+        handleDeleteTodo={handleDeleteTodo}
       />
       <TodoFooter todos={todos} />
     </div>
