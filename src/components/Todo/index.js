@@ -1,6 +1,11 @@
 import { useState } from "react";
 
-const Todo = ({ item, handleCompleteTodo, handleEditTodo }) => {
+const Todo = ({
+  item,
+  handleCompleteTodo,
+  handleEditTodo,
+  handleDeleteTodo,
+}) => {
   const [isEditing, setIsEditing] = useState(false);
   const [newEditedTodo, setNewEditedTodo] = useState(item.text);
 
@@ -16,7 +21,7 @@ const Todo = ({ item, handleCompleteTodo, handleEditTodo }) => {
   }
 
   return (
-    <div>
+    <div className="todo-item">
       <input
         type="checkbox"
         checked={item.isCompleted}
@@ -38,6 +43,12 @@ const Todo = ({ item, handleCompleteTodo, handleEditTodo }) => {
           {item.text}
         </label>
       )}
+
+      <span className="pomodoro">{item.estPomodoros}</span>
+
+      <button onClick={() => handleDeleteTodo(item.id)} className="delete">
+        Delete
+      </button>
     </div>
   );
 };
