@@ -113,10 +113,10 @@ hr {
 }
 
 .btn-cancel {
-  border: 1px solid lightgray;
+  border: none;
   border-radius: 5px;
   background-color: whitesmoke;
-  color: indianred;
+  color: gray;
   padding: 8px 12px;
   margin-right: 5px;
 }
