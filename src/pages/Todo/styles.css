@@ -1,0 +1,12 @@
+.todo-page {
+}
+
+.todo-page--light {
+  background-color: #ffffff;
+  color: gray;
+}
+
+.todo-page--dark {
+  background-color: darkslateblue;
+  color: whitesmoke;
+}
