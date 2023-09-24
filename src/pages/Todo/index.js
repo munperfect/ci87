@@ -1,6 +1,6 @@
-import TodoHeader from "../../components/TodoHeader";
-import TodoList from "../../components/TodoList";
-import TodoFooter from "../../components/TodoFooter";
+import TodoHeader from "./components/TodoHeader";
+import TodoList from "./components/TodoList";
+import TodoFooter from "./components/TodoFooter";
 import TODOS from "../../data/todo";
 import { useState, useContext } from "react";
 import ThemeContext from "../../contexts/ThemeContext";

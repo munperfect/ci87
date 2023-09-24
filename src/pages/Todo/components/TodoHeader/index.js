@@ -1,11 +1,9 @@
-import { useState, useContext } from "react";
-import ThemeContext from "../../contexts/ThemeContext";
+import { useState } from "react";
 
 const TodoHeader = ({ handleAddTodo }) => {
   const [newTodo, setNewTodo] = useState("");
   const [isAdding, setIsAdding] = useState(false);
   const [estPomodoros, setEstPomodoros] = useState(1);
-  const { theme, setTheme } = useContext(ThemeContext);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -26,19 +24,7 @@ const TodoHeader = ({ handleAddTodo }) => {
   }
 
   return (
-    <div className="header">
-      <div className="theme">
-        <span>Pick theme 👉 </span>
-        {theme === "light" ? (
-          <button className="btn-dark" onClick={() => setTheme("dark")}>
-            🌚
-          </button>
-        ) : (
-          <button className="btn-light" onClick={() => setTheme("light")}>
-            🌞
-          </button>
-        )}
-      </div>
+    <div className="todo-header">
       {isAdding ? (
         <>
           <input
