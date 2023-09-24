@@ -1,9 +1,13 @@
-.todo-page--light {
+.home-page {
+  padding: 240px 180px;
+}
+
+.home-page--light {
   background-color: #ffffff;
   color: gray;
 }
 
-.todo-page--dark {
+.home-page--dark {
   background-color: darkslateblue;
   color: whitesmoke;
 }
